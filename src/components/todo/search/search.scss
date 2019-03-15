@@ -1,0 +1,21 @@
+#wrapTodoList {
+        .todoApp {
+            &__search {
+                width: $widthSearch;
+                height: $heightSearchAndFilter;
+                    input {
+                        display: flex;
+                        width: 100%;
+                        height: $heightSearchAndFilter;
+                        background-color: $colorSearch;
+                        font-size: 16px;
+                        border: 1px solid #d3d3d3;
+                        border-radius: 3px;
+                        padding: 0 10px;
+                        transition: all 0.2s;
+                        color: #434343;
+                    }
+            }
+            
+        }
+}

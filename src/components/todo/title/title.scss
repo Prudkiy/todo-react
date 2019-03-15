@@ -1,0 +1,22 @@
+#wrapTodoList { 
+        .todoApp {
+            &__title {
+                margin-bottom: 15px;
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                            h1 {
+                                display: block;
+                                font-size: 25px;
+                                font-weight: normal;
+                                color: $colorTitle;
+                            }
+                            p {
+                                display: block;
+                                color: #434343;
+                            }
+                    }
+            }
+        }
+}

@@ -1,0 +1,61 @@
+#wrapTodoList {
+        .todoApp {
+            &__list {
+                width: 100%;
+                margin-top: 30px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    background-color: #ffffff;
+                    border-radius: 3px;
+                    border: 1px solid #d3d3d3;
+                    width: 100%;
+                    margin-bottom: 12px;
+                    height: $heightListEl;
+                    padding: 0 0 0 15px;
+                    color: #434343;
+                }
+                &-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    align-items: center;
+                }
+                &-task {
+                    display: block;
+                }
+                &-taskDone {
+                    text-decoration: line-through;
+                }
+                &-important {
+                    font-weight: bold;
+                    color: $colorTitle;
+                }
+                &-buts {
+                    display: block;
+                    button {
+                        border: none;
+                        width: 50px;
+                        height: $heightListEl;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                    &-important {
+                        background-color: $colorTitle;
+                    }
+                    &-dontImportant {
+                        background-color: $colorNotActBut;
+                    }
+                    &-delite {
+                        background-color: $colorDelite;
+                    }
+                }
+            }
+            /* bootsrap icon */
+            .fa-exclamation, .fa-trash-o {
+                color: #ffffff;
+            }
+        }
+}

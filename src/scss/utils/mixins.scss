@@ -1,0 +1,55 @@
+/* adapitve fontSize */
+@function rem($pixels, $context: $mainFontSize) {
+    @if (unitless($pixels)) {
+      $pixels: $pixels * 1px;
+    }
+  
+    @if (unitless($context)) {
+      $context: $context * 1px;
+    }
+  
+    @return $pixels / $context * 1rem;
+  }
+  
+  @mixin size($width,$height: $width) {
+    width: $width;
+    height: $height;
+  }
+
+  // adaptive width
+
+    @mixin smDesktop() {
+        @media only screen and (max-width: $smDesktopWidth){
+            @content;
+        }
+    }
+
+    @mixin table() {
+        @media only screen and (max-width: $tableWidth){
+            @content;
+        }
+    }
+
+    @mixin phone() {
+        @media only screen and (max-width: $phoneWidth){
+            @content;
+        }
+    }
+
+    @mixin smPhone() {
+        @media only screen and (max-width: $smPhoneWidth){
+            @content;
+        }
+    }
+
+    /**/
+
+
+  
+  @mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+
+  }

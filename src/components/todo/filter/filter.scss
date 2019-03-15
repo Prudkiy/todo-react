@@ -1,0 +1,36 @@
+#wrapTodoList {
+        .todoApp {
+            &__filter {
+                width: $widthFilter;
+                height: $heightSearchAndFilter;
+                    &--but {
+                        display: flex;
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: $heightSearchAndFilter;
+                            text-align: center;
+                            background-color: $colorNotActBut;
+                            border: none;
+                            width: 30%;
+                            margin-left: 3.3%;
+                            border-radius: 3px;
+                            cursor: pointer;
+                            transition: all 0.2s;
+                            color: #ffffff;
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                    }
+                    .todoApp__filter--butAct {
+                        background-color: $colorActiveFilter;
+                        color: #ffffff;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+}

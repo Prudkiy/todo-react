@@ -1,0 +1,39 @@
+#wrapTodoList {
+    .todoApp {
+        &__addTask {
+            form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: $heightAddTask;
+                border-radius: 3px;
+                margin-top: 50px;
+                    input {
+                        display: block;
+                        width: $widthInputAdd;
+                        height: $heightAddTask;
+                        border: 1px solid $colorBut;
+                        padding: 0 20px;
+                        font-size: 16px;
+                        background-color: $colorAddInput;
+                    }
+                    button {
+                        display: block;
+                        width: $widthButAdd;
+                        height: $heightAddTask;
+                        border: none;
+                        border: 1px solid $colorBut;
+                        border-left: none;
+                        font-size: 16px;
+                        color: #ffffff;
+                        cursor: pointer;
+                        background-color: $colorActiveFilter;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+            }
+        }
+        
+    }
+}

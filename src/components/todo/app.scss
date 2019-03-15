@@ -1,0 +1,37 @@
+$widthTodoList: 700px;
+$heightSearchAndFilter: 40px;
+$widthSearch: 385px;
+$widthFilter: $widthTodoList - $widthSearch;
+$heightListEl: 40px;
+$widthLIstEl: 500px;
+$colorTitle: #0055ff;
+$colorActiveFilter: #0caa0c;
+$colorBut: #d3d3d3;
+$colorNotActBut: #515151;
+$colorDelite: #fd1b1f;
+$heightAddTask: 40px;
+$widthInputAdd: 594px;
+$widthButAdd: 106px;
+$colorSearch: #ffffff;
+$colorAddInput: #ffffff;
+
+#wrapTodoList {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 3px;
+    width: $widthTodoList;
+    margin: 50px auto 0;  
+        .todoApp {
+            &__searchAndFilter {
+                display: flex;
+                justify-content: space-between;
+                height: $heightSearchAndFilter;
+            }
+        }
+}
+
+@import './title/title.scss';
+@import './search/search.scss';
+@import './filter/filter.scss';
+@import './list/list.scss';
+@import './add-task/add-task.scss';
